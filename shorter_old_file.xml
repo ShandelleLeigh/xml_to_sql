@@ -1,0 +1,33 @@
+<SupportworksSchema version="1.1">
+	<Application name="swserverservice">
+		<Database name="swdata">
+			<Tables>
+				<Table name="address">
+					<Column name="country" sqltype="VARCHAR" size="96" nullable="yes"/>
+					<Column name="postcode" sqltype="VARCHAR" size="32" nullable="yes"/>
+				</Table>
+				<Table name="affected_bus_area">
+					<Column name="pk_area_id" sqltype="VARCHAR" size="128" primarykey="yes"/>
+					<Column name="fk_cmdb_id" sqltype="INTEGER" nullable="yes"/>
+					<Column name="appcode" sqltype="VARCHAR" size="16" nullable="yes"/>
+					<Column name="notes" sqltype="LONGVARCHAR" nullable="yes"/>
+				</Table>
+				<Table name="bpm_audit_fields">
+					<Column name="pk_id" sqltype="INTEGER"  auto_increment="yes"/>
+					<Column name="fk_workflow_id" sqltype="VARCHAR" size="64" nullable="yes"/>
+					<Column name="fieldname" sqltype="VARCHAR" size="254" nullable="yes"/>
+				</Table>
+				<Table name="bpm_authcond">
+					<Column name="appcode" sqltype="VARCHAR" size="16" nullable="yes"/>
+					<Column name="created_datex" sqltype="INTEGER"/>
+					<Column name="analystid" sqltype="VARCHAR" size="64"/>
+				</Table>
+			</Tables>
+		</Database>
+	</Application>
+	<Application name="CandidateTo_swserverservice">
+		<Database name="swdata">
+			<Tables/>
+		</Database>
+	</Application>
+</SupportworksSchema>

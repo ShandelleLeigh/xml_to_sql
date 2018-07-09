@@ -1,0 +1,9 @@
+<SupportworksSchema version="1.1">
+	<Application name="swserverservice">
+		<Database name="swdata">
+			<Tables>
+				
+			<Tables/>
+		</Database>
+	</Application>
+</SupportworksSchema>
